@@ -1,0 +1,77 @@
+.featured {
+  height: 100vh;
+}
+.featuredVertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+.featuredHorizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111, transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.7rem;
+  padding-bottom: 150px;
+}
+
+.featuredName {
+  font-size: 60px;
+  font-weight: bold;
+}
+.featuredInfo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.9rem;
+}
+.featuredPoints {
+  color: #46d369;
+}
+.featuredPoints,
+.featuredYear,
+.featuredSeasons {
+  display: inline-block;
+  margin-right: 0.9rem;
+}
+
+.featuredDescription {
+  margin-top: 0.9rem;
+  font-size: 1.2rem;
+  max-width: 40%;
+  color: #999;
+}
+.buttons {
+  margin-top: 0.9rem;
+}
+.watchButton,
+.myListButton {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  opacity: 1;
+  transition: all ease 0.2;
+}
+.watchButton:hover,
+.myListButton:hover {
+  opacity: 0.7;
+}
+.watchButton {
+  background-color: #fff;
+  color: #000;
+}
+.myListButton {
+  background-color: #333;
+  color: #fff;
+}
+
+.featuredGenres {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #999;
+}
