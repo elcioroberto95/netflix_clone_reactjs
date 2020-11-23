@@ -8,6 +8,10 @@ const FeatureMovie = ({ data }) => {
   for (let i in data.genres) {
     genres.push(data.genres[i].name);
   }
+  let description = data.overview;
+  if (description.length > 200) {
+    description = description.substring(0, 200) + '...';
+  }
   console.log(firstDate);
   return (
     <section
@@ -32,7 +36,7 @@ const FeatureMovie = ({ data }) => {
             </div>
           </div>
 
-          <div className={styles.featuredDescription}>{data.overview}</div>
+          <div className={styles.featuredDescription}>{description}</div>
           <div className={styles.buttons}>
             <a className={styles.watchButton} href={`/watch/${data.id}`}>
               ► Assistir

@@ -75,3 +75,26 @@
   font-size: 1rem;
   color: #999;
 }
+@media (max-width: 760px) {
+  .featured {
+    height: 80vh;
+  }
+  .featuredName {
+    font-size: 2rem;
+  }
+  .featuredInfo {
+    font-size: 0.9rem;
+  }
+  .featuredDescription {
+    font-size: 0.8rem;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+  .watchButton,
+  .myListButton {
+    font-size: 1rem;
+  }
+  .featuredGenres {
+    font-size: 0.9rem;
+  }
+}
